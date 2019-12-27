@@ -1,0 +1,2 @@
+# prj_sc2238_RGB
+SC2238 CMOS, RGB 
