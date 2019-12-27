@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 27 08:10:43 2019
+# Process ID: 7384
+# Current directory: E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8764 E:\WorkSpace\project\FPGA\prj_sc2238_RGB_\prj_sc2238_RGB\prj_sc2238_RGB.xpr
+# Log file: E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/vivado.log
+# Journal file: E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-748] XILINX_TCLAPP_REPO is set to 'D:/Xilinx/Vivado/2018.1/data/XilinxTclStore'. Refresh XilinxTclStore catalog is disabled when XILINX_TCLAPP_REPO is set.
+start_gui
+open_project E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/prj_sc2238_RGB.xpr
+INFO: [Project 1-313] Project file moved from 'E:/WorkSpace/project/FPGA/prj_sc2238_RGB/prj_sc2238_RGB' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/WorkSpace/project/FPGA_backup/prj_sc030_V2.0_emmc/prj_ocr/prj_ocr.srcs/sources_1/ip/SC30_0/SC30_0.upgrade_log'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/WorkSpace/project/FPGA_backup/prj_sc030_V2.0_emmc/prj_sc030/prj_sc030.srcs/sources_1/new/BIT10TABLE.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/WorkSpace/project/FPGA/prj_sc030_V2.0_emmc/prj_sc030/prj_sc030.srcs/sources_1/new/BIT10TABLE.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'e:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/prj_sc2238_RGB.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libps7.so'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'e:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/prj_sc2238_RGB.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libremoteport.so'. Please regenerate to continue.
+INFO: [Project 1-230] Project 'prj_sc2238_RGB.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 969.523 ; gain = 193.855
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1

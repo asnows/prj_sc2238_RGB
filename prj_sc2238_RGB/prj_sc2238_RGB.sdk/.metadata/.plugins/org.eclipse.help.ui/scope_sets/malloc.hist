@@ -1,0 +1,4 @@
+#Thu May 09 08:25:31 CST 2019
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=malloc

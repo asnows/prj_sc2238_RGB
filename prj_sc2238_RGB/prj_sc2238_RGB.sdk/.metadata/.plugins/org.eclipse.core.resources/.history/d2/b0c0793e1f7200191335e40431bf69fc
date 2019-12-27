@@ -1,0 +1,65 @@
+/*
+ * udp.h
+ *
+ *  Created on: 2019年5月7日
+ *      Author: Administrator
+ */
+
+#ifndef SRC_MY_UDP_H_
+#define SRC_MY_UDP_H_
+#include "lwipopts.h"
+#include "lwip/ip_addr.h"
+#include "lwip/err.h"
+#include "lwip/udp.h"
+#include "lwip/inet.h"
+#include "xil_printf.h"
+#include "platform.h"
+
+#define UDP_BYTES		3840;
+#define CMD_UDP_LINK    0x0000
+#define CMD_PIC_STREAM  0x0001
+#define CMD_PIC_CAPTURE 0x0002
+#define CMD_PIC_STOP    0x0003
+#define CMD_UDP_unLINK  0x0005
+
+void udp_trans(struct udp_pcb *pcb,struct pbuf *p);
+void udp_Init();
+void trans_picture(void);
+
+struct UDP_TRANS_DEF
+{
+	unsigned char flg;
+	unsigned char cmd;
+	struct udp_pcb *pcb;
+	struct pbuf *p;
+	struct pbuf *p_next;
+
+	u16_t img_width;
+	u16_t img_height;
+	u32_t frame_num;	//帧序号
+	u16_t package_bytes; // 包大小
+	u8_t pic_stream_flg;
+
+};
+
+
+
+struct UDP_FRAME_HEAD_DEF
+{
+
+    uint8_t cmd_c;
+    uint8_t cmd_m;
+    uint8_t cmd_d;
+    uint8_t cmd_reserve;
+    uint16_t cmd;
+    uint16_t img_width;
+    uint16_t img_height;
+    uint8_t  frame; // 0x01 = 起始帧，0x02中间帧，0x03最后帧
+    uint32_t frame_serial;
+
+};
+
+
+
+
+#endif /* SRC_MY_UDP_H_ */

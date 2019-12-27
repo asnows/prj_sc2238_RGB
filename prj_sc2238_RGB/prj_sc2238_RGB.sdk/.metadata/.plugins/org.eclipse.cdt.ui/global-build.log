@@ -1,0 +1,927 @@
+09:53:30 **** Clean-only build of configuration Debug for project ps ****
+make clean 
+rm -rf  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o  ./src/Bsp_RGB_Samp.d ./src/Bsp_TwoCPU.d ./src/Bsp_VDMAframe.d ./src/Image_Pixl.d ./src/SC030GS.d ./src/get_image.d ./src/helloworld.d ./src/interrupt.d ./src/platform.d ./src/psiic.d ./src/sc030_fpga.d ./src/vdma.d ./src/vdma_my.d ./src/xemacps_hw.d ./src/xemacps_phy.d  ps.elf.size  ps.elf
+' '
+09:53:30 **** Clean-only build of project ps_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/iicps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/nandps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+09:53:33 **** Build of project ps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/nandps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/nandps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axivdma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/nandps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/nandps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling nandps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:54:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+09:54:13 **** Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Bsp_RGB_Samp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Bsp_RGB_Samp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Bsp_RGB_Samp.d" -MT"src/Bsp_RGB_Samp.o" -o "src/Bsp_RGB_Samp.o" "../src/Bsp_RGB_Samp.c"
+../src/Bsp_RGB_Samp.c: In function 'Bsp_RGB_GetpFrames':
+../src/Bsp_RGB_Samp.c:72:9: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    *OutP=addr;
+         ^
+../src/Bsp_RGB_Samp.c:73:22: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+    RGBSamp.Framesp[i]=(unsigned char*) addr;
+                      ^
+'Finished building: ../src/Bsp_RGB_Samp.c'
+' '
+'Building file: ../src/Bsp_TwoCPU.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Bsp_TwoCPU.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Bsp_TwoCPU.d" -MT"src/Bsp_TwoCPU.o" -o "src/Bsp_TwoCPU.o" "../src/Bsp_TwoCPU.c"
+In file included from ../src/Bsp_TwoCPU.c:6:0:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/Bsp_TwoCPU.c:6:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+'Finished building: ../src/Bsp_TwoCPU.c'
+' '
+'Building file: ../src/Bsp_VDMAframe.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Bsp_VDMAframe.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Bsp_VDMAframe.d" -MT"src/Bsp_VDMAframe.o" -o "src/Bsp_VDMAframe.o" "../src/Bsp_VDMAframe.c"
+'Finished building: ../src/Bsp_VDMAframe.c'
+' '
+'Building file: ../src/Image_Pixl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Image_Pixl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Image_Pixl.d" -MT"src/Image_Pixl.o" -o "src/Image_Pixl.o" "../src/Image_Pixl.c"
+In file included from ../src/Image_Pixl.c:2:0:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/Image_Pixl.c:2:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/Image_Pixl.c: In function 'Image_Information':
+../src/Image_Pixl.c:26:5: warning: implicit declaration of function 'Get_i1280720Reg' [-Wimplicit-function-declaration]
+     Get_i1280720Reg(&IR_Pixel);
+     ^~~~~~~~~~~~~~~
+'Finished building: ../src/Image_Pixl.c'
+' '
+'Building file: ../src/SC030GS.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SC030GS.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SC030GS.d" -MT"src/SC030GS.o" -o "src/SC030GS.o" "../src/SC030GS.c"
+../src/SC030GS.c: In function 'SC030GS_init':
+../src/SC030GS.c:566:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("value = %x \r\n",value);
+  ^~~~~~~~~~
+../src/SC030GS.c:558:16: warning: unused variable 'status' [-Wunused-variable]
+  unsigned char status;
+                ^~~~~~
+../src/SC030GS.c:557:15: warning: unused variable 'org' [-Wunused-variable]
+  unsigned int org;
+               ^~~
+../src/SC030GS.c:555:16: warning: unused variable 'MorenRegAddr' [-Wunused-variable]
+  unsigned int *MorenRegAddr;
+                ^~~~~~~~~~~~
+'Finished building: ../src/SC030GS.c'
+' '
+'Building file: ../src/get_image.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/get_image.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/get_image.d" -MT"src/get_image.o" -o "src/get_image.o" "../src/get_image.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/get_image.c:50:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/get_image.c:50:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/get_image.c: In function 'Image_init':
+../src/get_image.c:99:3: warning: implicit declaration of function 'SC030GS_init'; did you mean 'eth0_init'? [-Wimplicit-function-declaration]
+   SC030GS_init();//初始化
+   ^~~~~~~~~~~~
+   eth0_init
+../src/get_image.c:76:16: warning: unused variable 'addrs' [-Wunused-variable]
+   unsigned int addrs =0x17000000;
+                ^~~~~
+../src/get_image.c:75:7: warning: unused variable 'stats' [-Wunused-variable]
+   int stats;
+       ^~~~~
+../src/get_image.c: In function 'Image_Get':
+../src/get_image.c:175:11: warning: implicit declaration of function 'Bsp_ReadfreamSno'; did you mean 'Bsp_ReadCPU0CMD'? [-Wimplicit-function-declaration]
+    sno[0]=Bsp_ReadfreamSno();//读取的是已经完成的帧号
+           ^~~~~~~~~~~~~~~~
+           Bsp_ReadCPU0CMD
+../src/get_image.c:180:14: warning: implicit declaration of function 'Bsp_GetGrayCode' [-Wimplicit-function-declaration]
+     Framesno=Bsp_GetGrayCode(sno[0]&0xf);
+              ^~~~~~~~~~~~~~~
+../src/get_image.c:185:6: warning: implicit declaration of function 'Bsp_SetSkipfreamSno' [-Wimplicit-function-declaration]
+      Bsp_SetSkipfreamSno(sno[1]);
+      ^~~~~~~~~~~~~~~~~~~
+../src/get_image.c:174:18: warning: variable 'Framesno' set but not used [-Wunused-but-set-variable]
+    unsigned char Framesno;
+                  ^~~~~~~~
+../src/get_image.c: In function 'Image_init':
+../src/get_image.c:82:3: warning: 'channl' is used uninitialized in this function [-Wuninitialized]
+   SC30_Set_HHVVCC(HH,VV,channl);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/get_image.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:57:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:64:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:67:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:56:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/interrupt.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interrupt.d" -MT"src/interrupt.o" -o "src/interrupt.o" "../src/interrupt.c"
+../src/interrupt.c: In function 'InterruptHandler_IRQ':
+../src/interrupt.c:91:9: warning: unused variable 'isr' [-Wunused-variable]
+     u32 isr;
+         ^~~
+../src/interrupt.c:88:9: warning: unused variable 'i' [-Wunused-variable]
+     u32 i;
+         ^
+../src/interrupt.c: In function 'Int_init':
+../src/interrupt.c:123:30: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     XExc_VectorTable[5].Data = data;
+                              ^
+'Finished building: ../src/interrupt.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/psiic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/psiic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/psiic.d" -MT"src/psiic.o" -o "src/psiic.o" "../src/psiic.c"
+../src/psiic.c: In function 'i2c_wrtie_bytes':
+../src/psiic.c:56:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(1);
+    ^~~~~~
+'Finished building: ../src/psiic.c'
+' '
+'Building file: ../src/sc030_fpga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sc030_fpga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sc030_fpga.d" -MT"src/sc030_fpga.o" -o "src/sc030_fpga.o" "../src/sc030_fpga.c"
+../src/sc030_fpga.c: In function 'SC30_Set_SoftExposure':
+../src/sc030_fpga.c:191:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(5);
+  ^~~~~~
+../src/sc030_fpga.c:184:8: warning: unused variable 'fz' [-Wunused-variable]
+  float fz;
+        ^~
+'Finished building: ../src/sc030_fpga.c'
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/vdma.c:2:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/vdma.c:2:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+'Finished building: ../src/vdma.c'
+' '
+'Building file: ../src/vdma_my.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma_my.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma_my.d" -MT"src/vdma_my.o" -o "src/vdma_my.o" "../src/vdma_my.c"
+../src/vdma_my.c: In function 'My_vdma_write_init':
+../src/vdma_my.c:139:15: warning: unused variable 'STRIDE' [-Wunused-variable]
+  unsigned int STRIDE;
+               ^~~~~~
+'Finished building: ../src/vdma_my.c'
+' '
+'Building file: ../src/xemacps_hw.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_hw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_hw.d" -MT"src/xemacps_hw.o" -o "src/xemacps_hw.o" "../src/xemacps_hw.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/xemacps_hw.c:9:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/xemacps_hw.c:9:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/xemacps_hw.c: In function 'Trans_Frames':
+../src/xemacps_hw.c:598:54: warning: array subscript has type 'char' [-Wchar-subscripts]
+    Tx_List.Descriptor[1].word0 = eth0_ctrl.frame_addr[eth0_ctrl.gray_code];
+                                                      ^
+../src/xemacps_hw.c: In function 'trans_arp':
+../src/xemacps_hw.c:649:12: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   tx_bd[0] = arp_buf;
+            ^
+../src/xemacps_hw.c: In function 'Rev_Frame_process':
+../src/xemacps_hw.c:732:8: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_buf =DDR_REV_BUF_START_ADDR;
+        ^
+../src/xemacps_hw.c:750:17: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+    memcpy(p_buf,srcAddr,srcLength);
+                 ^~~~~~~
+In file included from d:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/include.h:10,
+                 from ../src/xemacps_hw.c:9:
+d:\xilinx\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:23:8: note: expected 'const void * restrict' but argument is of type 'u32 {aka long unsigned int}'
+ _PTR   _EXFUN(memcpy,(_PTR __restrict, const _PTR __restrict, size_t));
+        ^
+../src/xemacps_hw.c:778:9: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  if(isr & XEMACPS_IXR_FRAMERX_MASK == 0)
+         ^
+../src/xemacps_hw.c:784:9: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_data = p_dptr->word0 & (~XEMACPS_RXSR_BUFFNA_MASK);
+         ^
+../src/xemacps_hw.c:786:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(*((u32*)(p_buf + 38)) =  *(u32 *)p_header->ip_SourceAddress)
+     ^
+../src/xemacps_hw.c:726:6: warning: variable 'p_data' set but not used [-Wunused-but-set-variable]
+  u8* p_data;
+      ^~~~~~
+../src/xemacps_hw.c: In function 'Rev_Frames':
+../src/xemacps_hw.c:827:6: warning: variable 'rxsr' set but not used [-Wunused-but-set-variable]
+  u32 rxsr;
+      ^~~~
+'Finished building: ../src/xemacps_hw.c'
+' '
+'Building file: ../src/xemacps_phy.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_phy.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_phy.d" -MT"src/xemacps_phy.o" -o "src/xemacps_phy.o" "../src/xemacps_phy.c"
+../src/xemacps_phy.c: In function 'get_phy_speed_ksz9031':
+../src/xemacps_phy.c:157:3: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+   strsep
+'Finished building: ../src/xemacps_phy.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `float_test':
+E:\WorkSpace\project\FPGA\prj_sc2238_RGB\prj_sc2238_RGB\prj_sc2238_RGB.sdk\ps\Debug/../src/helloworld.c:66: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ps.elf] 错误 1
+09:55:05 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:68:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `float_test':
+E:\WorkSpace\project\FPGA\prj_sc2238_RGB\prj_sc2238_RGB\prj_sc2238_RGB.sdk\ps\Debug/../src/helloworld.c:67: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ps.elf] 错误 1
+09:55:17 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:68:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: unused variable 'sqrt_value' [-Wunused-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ps.elf  |tee "ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109080	   3392	  24352	 136824	  21678	ps.elf
+'Finished building: ps.elf.size'
+' '
+09:55:28 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:68:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `float_test':
+E:\WorkSpace\project\FPGA\prj_sc2238_RGB\prj_sc2238_RGB\prj_sc2238_RGB.sdk\ps\Debug/../src/helloworld.c:67: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ps.elf] 错误 1
+09:55:55 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `float_test':
+E:\WorkSpace\project\FPGA\prj_sc2238_RGB\prj_sc2238_RGB\prj_sc2238_RGB.sdk\ps\Debug/../src/helloworld.c:68: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ps.elf] 错误 1
+09:56:48 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `float_test':
+E:\WorkSpace\project\FPGA\prj_sc2238_RGB\prj_sc2238_RGB\prj_sc2238_RGB.sdk\ps\Debug/../src/helloworld.c:68: undefined reference to `acos'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ps.elf] 错误 1
+09:57:11 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `float_test':
+E:\WorkSpace\project\FPGA\prj_sc2238_RGB\prj_sc2238_RGB\prj_sc2238_RGB.sdk\ps\Debug/../src/helloworld.c:68: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ps.elf] 错误 1
+09:58:34 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:68:18: error: 'std' undeclared (first use in this function); did you mean 'str'?
+     sqrt_value = std::sqrt((double)value3);
+                  ^~~
+                  str
+../src/helloworld.c:68:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:68:21: error: expected ';' before ':' token
+     sqrt_value = std::sqrt((double)value3);
+                     ^
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+make: *** [src/helloworld.o] 错误 1
+09:58:58 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: variable 'sqrt_value' set but not used [-Wunused-but-set-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `float_test':
+E:\WorkSpace\project\FPGA\prj_sc2238_RGB\prj_sc2238_RGB\prj_sc2238_RGB.sdk\ps\Debug/../src/helloworld.c:68: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [ps.elf] 错误 1
+09:59:38 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: unused variable 'sqrt_value' [-Wunused-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ps.elf  |tee "ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109080	   3392	  24352	 136824	  21678	ps.elf
+'Finished building: ps.elf.size'
+' '
+10:00:46 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:57:31: warning: unused variable 'sqrt_value' [-Wunused-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ps.elf  |tee "ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109080	   3392	  24352	 136824	  21678	ps.elf
+'Finished building: ps.elf.size'
+' '
+10:00:57 **** Incremental Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:01:14 **** Incremental Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:02:39 **** Auto Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/get_image.h:20:0,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_TwoCPU.h:48:0: warning: "MAXDDRNUM" redefined
+ #define MAXDDRNUM     8   //定义DDR存放路数  Bsp_RGB_Samp.h中定义
+ 
+In file included from ../src/Bsp_TwoCPU.h:46:0,
+                 from ../src/get_image.h:20,
+                 from ../src/include.h:14,
+                 from ../src/helloworld.c:51:
+../src/Bsp_RGB_Samp.h:6:0: note: this is the location of the previous definition
+ #define MAXDDRNUM       4
+ 
+../src/helloworld.c: In function 'float_test':
+../src/helloworld.c:58:21: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float* p_dptr = 0x17000000;
+                     ^~~~~~~~~~
+../src/helloworld.c:65:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     float *pdptr = 0x17000004;
+                    ^~~~~~~~~~
+../src/helloworld.c:69:19: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" f = %x \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %lx
+../src/helloworld.c:71:19: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf(" d = %d \n\r",(u32)value3);
+                  ~^       ~~~~~~~~~~~
+                  %ld
+../src/helloworld.c:57:31: warning: unused variable 'sqrt_value' [-Wunused-variable]
+     float value,value2,value3,sqrt_value;
+                               ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ps_bsp/ps7_cortexa9_0/lib -o "ps.elf"  ./src/Bsp_RGB_Samp.o ./src/Bsp_TwoCPU.o ./src/Bsp_VDMAframe.o ./src/Image_Pixl.o ./src/SC030GS.o ./src/get_image.o ./src/helloworld.o ./src/interrupt.o ./src/platform.o ./src/psiic.o ./src/sc030_fpga.o ./src/vdma.o ./src/vdma_my.o ./src/xemacps_hw.o ./src/xemacps_phy.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ps.elf  |tee "ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109088	   3392	  24352	 136832	  21680	ps.elf
+'Finished building: ps.elf.size'
+' '
+10:02:47 **** Incremental Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:51:44 **** Incremental Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

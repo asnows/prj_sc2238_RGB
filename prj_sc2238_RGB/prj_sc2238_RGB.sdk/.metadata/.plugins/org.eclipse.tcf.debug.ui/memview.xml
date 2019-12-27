@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Memory>
+<Block Addr="0x17000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x43C00000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x11c4e8" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x10001800" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0xF8000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x112900" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0xE000B024" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x11ec00" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x18000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x0ff70000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x125514" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x10001800" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x10001e00" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0xF8F01200" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x10001e00" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x1101d4" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x110228" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x15000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x155EEC00" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x15BDD800" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x161CC400" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x43010000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x43000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x10000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x00100000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x0ff00000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x00000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0x11842c" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0xff06100" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+<Block Addr="0xff0c000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1" View="org.eclipse.debug.ui.MemoryView.0"/>
+</Block>
+</Memory>

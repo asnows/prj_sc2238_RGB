@@ -1,0 +1,39 @@
+/*
+ * udp.h
+ *
+ *  Created on: 2019Äê5ÔÂ7ÈÕ
+ *      Author: Administrator
+ */
+
+#ifndef SRC_MY_UDP_H_
+#define SRC_MY_UDP_H_
+#include "lwipopts.h"
+#include "lwip/ip_addr.h"
+#include "lwip/err.h"
+#include "lwip/udp.h"
+#include "lwip/inet.h"
+#include "xil_printf.h"
+#include "platform.h"
+
+#define UDP_BYTES		3840;
+#define CMD_UDP_LINK    0x0000
+#define CMD_PIC_STREAM  0x0001
+#define CMD_PIC_CAPTURE 0x0002
+#define CMD_PIC_STOP    0x0003
+#define CMD_UDP_unLINK  0x0005
+
+void udp_trans(struct udp_pcb *pcb,struct pbuf *p);
+
+struct UDP_TRANS_DEF
+{
+	unsigned char flg;
+	unsigned char cmd;
+	struct udp_pcb *pcb;
+	struct pbuf *p;
+
+	u16_t img_width;
+	u16_t img_height;
+	u32_t frame_num;
+};
+
+#endif /* SRC_MY_UDP_H_ */

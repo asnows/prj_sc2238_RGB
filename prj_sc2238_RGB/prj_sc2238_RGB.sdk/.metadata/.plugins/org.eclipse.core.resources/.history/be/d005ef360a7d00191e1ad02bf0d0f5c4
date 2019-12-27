@@ -1,0 +1,22 @@
+/*
+ * include.h
+ *
+ *  Created on: 2019Äê5ÔÂ22ÈÕ
+ *      Author: Administrator
+ */
+
+#ifndef SRC_INCLUDE_H_
+#define SRC_INCLUDE_H_
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+#include"interrupt.h"
+#include"xemacps_hw.h"
+#include"xemacps_phy.h"
+#include"get_image.h"
+
+
+
+
+#endif /* SRC_INCLUDE_H_ */

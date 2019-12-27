@@ -1,0 +1,162 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 7384
+License: Customer
+
+Current time: 	Fri Dec 27 08:11:16 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 14 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/vivado.log
+Vivado journal file location: 	E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/vivado.jou
+Engine tmp dir: 	E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/.Xil/Vivado-7384-VT2OB6D7ZB52FZ0
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_TCLAPP_REPO: D:\Xilinx\Vivado\2018.1\data\XilinxTclStore
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	192 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 528 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: INFO: [Common 17-748] XILINX_TCLAPP_REPO is set to 'D:/Xilinx/Vivado/2018.1/data/XilinxTclStore'. Refresh XilinxTclStore catalog is disabled when XILINX_TCLAPP_REPO is set. 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57739kb) [00:00:06]
+// [Engine Memory]: 522 MB (+395692kb) [00:00:06]
+// aL (ck): Older Project Version: addNotify
+// [GUI Memory]: 65 MB (+4854kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 35 MB. Current time: 12/27/19 8:11:18 AM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: E:\WorkSpace\project\FPGA\prj_sc2238_RGB_\prj_sc2238_RGB\prj_sc2238_RGB.xpr. Version: Vivado v2018.1 
+// bx (ck):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aL (ck)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/prj_sc2238_RGB.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 565 MB (+18384kb) [00:00:18]
+// [Engine Memory]: 603 MB (+9451kb) [00:00:28]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 613 MB. GUI used memory: 36 MB. Current time: 12/27/19 8:11:38 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 674 MB (+43220kb) [00:00:36]
+// [GUI Memory]: 74 MB (+5536kb) [00:00:37]
+// [Engine Memory]: 735 MB (+28443kb) [00:00:37]
+// [GUI Memory]: 81 MB (+3956kb) [00:00:37]
+// [GUI Memory]: 85 MB (+377kb) [00:00:38]
+// Tcl Message: open_project E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB/prj_sc2238_RGB.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'E:/WorkSpace/project/FPGA/prj_sc2238_RGB/prj_sc2238_RGB' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// Tcl Message: INFO: [Project 1-230] Project 'prj_sc2238_RGB.xpr' upgraded for this version of Vivado. 
+// [Engine Memory]: 777 MB (+5526kb) [00:00:39]
+// Project name: prj_sc2238_RGB; location: E:/WorkSpace/project/FPGA/prj_sc2238_RGB_/prj_sc2238_RGB; part: xc7z020clg400-1
+// [GUI Memory]: 91 MB (+1004kb) [00:00:40]
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 969.523 ; gain = 193.855 
+// Elapsed time: 27 seconds
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 98 MB (+3041kb) [00:00:40]
+// a (ck): Critical Messages: addNotify
+// al (ck): Project Upgraded: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.ReportIPStatusInfoDialog_REPORT_IP_STATUS, "Report IP Status"); // a (al)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+dismissDialog("Project Upgraded"); // al (ck)
+// TclEventType: IP_SUMMARY_RESULTS
+// [GUI Memory]: 107 MB (+3710kb) [00:00:45]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+// bx (ck):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bx (ck)
+dismissDialog("Critical Messages"); // a (ck)
+// [GUI Memory]: 114 MB (+2070kb) [00:00:46]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+// Elapsed time: 97 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), isp_model_axis_i : isp_model_axis (isp_model_axis.v)]", 7); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), isp_model_axis_i : isp_model_axis (isp_model_axis.v), U_bayer2rgb : bayer2rgb (bayer2rgb.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), isp_model_axis_i : isp_model_axis (isp_model_axis.v), U_bayer2rgb : bayer2rgb (bayer2rgb.v)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 120 MB (+739kb) [00:03:01]
+// Elapsed time: 66 seconds
+selectCodeEditor("bayer2rgb.v", 136, 287); // ce (w, ck)
+selectCodeEditor("bayer2rgb.v", 136, 287, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("bayer2rgb.v", 158, 309); // ce (w, ck)
+selectCodeEditor("bayer2rgb.v", 156, 308, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("bayer2rgb.v", 221, 311); // ce (w, ck)
+selectCodeEditor("bayer2rgb.v", 221, 311, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("bayer2rgb.v", 132, 310); // ce (w, ck)
+selectCodeEditor("bayer2rgb.v", 132, 310, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("bayer2rgb.v", 237, 310); // ce (w, ck)
+selectCodeEditor("bayer2rgb.v", 237, 310, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("bayer2rgb.v", 160, 316); // ce (w, ck)
+selectCodeEditor("bayer2rgb.v", 159, 316, false, false, false, false, true); // ce (w, ck) - Double Click

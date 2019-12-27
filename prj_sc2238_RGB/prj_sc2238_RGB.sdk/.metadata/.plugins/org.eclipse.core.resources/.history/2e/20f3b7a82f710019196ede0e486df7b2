@@ -1,0 +1,19 @@
+/*
+ * udp.h
+ *
+ *  Created on: 2019Äê5ÔÂ7ÈÕ
+ *      Author: Administrator
+ */
+
+#ifndef SRC_MY_UDP_H_
+#define SRC_MY_UDP_H_
+
+
+struct udp_ctr_def{
+
+	u8_t  pic_sendFlg;
+
+};
+void udp_trans(struct udp_pcb *pcb);
+
+#endif /* SRC_MY_UDP_H_ */

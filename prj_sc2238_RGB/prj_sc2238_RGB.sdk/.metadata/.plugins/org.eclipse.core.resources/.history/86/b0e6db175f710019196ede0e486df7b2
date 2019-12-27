@@ -1,0 +1,22 @@
+/*
+ * udp.h
+ *
+ *  Created on: 2019Äê5ÔÂ7ÈÕ
+ *      Author: Administrator
+ */
+
+#ifndef SRC_MY_UDP_H_
+#define SRC_MY_UDP_H_
+#include "lwipopts.h"
+#include "lwip/ip_addr.h"
+#include "lwip/err.h"
+#include "lwip/udp.h"
+#include "lwip/inet.h"
+#include "xil_printf.h"
+#include "platform.h"
+
+
+udp_trans(struct udp_pcb *pcb,struct pbuf *p_rev);
+//void udp_trans( struct udp_pcb *tpcb,struct pbuf *p, const ip_addr_t *addr, u16_t port);
+
+#endif /* SRC_MY_UDP_H_ */

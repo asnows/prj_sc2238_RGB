@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Default C source template" key="LastUsedSourceTemplate"/>
+	<item value="Default C header template" key="LastUsedHeaderTemplate"/>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item value="398" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="490" key="DIALOG_HEIGHT"/>
+		<item value="769" key="DIALOG_X_ORIGIN"/>
+		<item value="202" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="514" key="size.height"/>
+		<item value="1447" key="size.width"/>
+	</section>
+	<section name="CPathsPropertyPage">
+		<item value="0" key="pageIndex"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="false" key="caseSensitive"/>
+		<item value="227191" key="searchFlags"/>
+		<list key="previousPatterns">
+			<item value="vdma0_write_init"/>
+			<item value="BdTxTerminate"/>
+			<item value="__attribute__"/>
+			<item value="len"/>
+			<item value="Xil_ExceptionEnable"/>
+			<item value="ICCPMR"/>
+			<item value="EmacPsSetupIntrSystem"/>
+			<item value="XScuGic_Connect"/>
+			<item value="XEmacPs_SetHandler"/>
+			<item value="ErrorRef"/>
+			<item value="InstancePtrErrorRef"/>
+			<item value="XEmacPsSendHandler"/>
+			<item value="get_phy_speed_ksz9031"/>
+			<item value="XAxiDma_CfgInitialize"/>
+			<item value="XEMACPS_NWCFG_OFFSET"/>
+			<item value="INTC"/>
+			<item value="mac_ethernet_address"/>
+			<item value="EmacPsMAC"/>
+			<item value="init_phy"/>
+			<item value="vdma0_rd_status"/>
+			<item value="R0_reg3"/>
+			<item value="WIDTH"/>
+			<item value="package_bytes"/>
+			<item value="p_udp"/>
+			<item value="assign_default_ip"/>
+			<item value="DEFAULT_IP_ADDRESS"/>
+			<item value="kLabel"/>
+			<item value="udp_ctr"/>
+			<item value="udp_ctr_def"/>
+		</list>
+	</section>
+	<section name="IncludeSysmbolsPropertyPage">
+		<item value="0" key="pageIndex"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+</section>

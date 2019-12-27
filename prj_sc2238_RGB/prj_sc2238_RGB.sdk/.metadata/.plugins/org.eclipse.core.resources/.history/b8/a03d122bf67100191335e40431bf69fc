@@ -1,0 +1,201 @@
+/*
+ * my_udp.c
+ *
+ *  Created on: 2019年5月8日
+ *      Author: Administrator
+ */
+#include"my_udp.h"
+
+struct UDP_TRANS_DEF udp_trans_struct;
+//struct UDP_TRANS_DEF *p_udp;
+
+
+void trans_picture(void)
+{
+
+	struct UDP_TRANS_DEF *p_udp;
+
+
+	switch(udp_trans_struct.cmd)
+	{
+	case CMD_PIC_STREAM:
+
+
+//		udp_trans_struct.p->payload = 0x17000000 + ;
+//		udp_sendto(udp_trans_struct.pcb, udp_trans_struct.p, &udp_trans_struct.pcb->remote_ip, udp_trans_struct.pcb->remote_port);
+//		udp_trans_struct.frame_num++;
+		break;
+
+	case CMD_PIC_CAPTURE:
+		break;
+
+	default:
+		break;
+
+	}
+
+
+}
+
+
+void udp_trans(struct udp_pcb *pcb,struct pbuf *p_rev)
+{
+	unsigned char *p_buf;
+	unsigned short *p_cmd;
+	u16_t length = UDP_BYTES;
+
+	p_buf = (unsigned char *)(p_rev->payload);
+	p_cmd = &p_buf[4];
+
+//	p_udp = malloc(sizeof(struct UDP_TRANS_DEF));
+
+//	xil_printf("p_udp= %d \r\n", p_udp);
+//	xil_printf("sizeof(p_udp) = %d \r\n", sizeof(p_udp));
+	xil_printf("sizeof(UDP_TRANS_DEF) = %d \r\n", sizeof(struct UDP_TRANS_DEF));
+
+
+	xil_printf("char = %d \r\n", sizeof(char));
+	xil_printf("short = %d \r\n", sizeof(short));
+	xil_printf("int = %d \r\n", sizeof(int));
+	for(int i=0; i<p_rev->len;i++)
+	{
+
+		xil_printf("p_buf[%d] = %x \r\n", i,p_buf[i]);
+	}
+
+	xil_printf("p_cmd = %x %x \r\n", p_cmd[0],p_cmd[1]);
+	xil_printf("img_width = %d  \r\n", p_udp->img_width);
+	xil_printf("img_height = %d \r\n", p_udp->img_height);
+
+	//接收到上位机命令
+	if((p_buf[0] == 0x63) && (p_buf[1] == 0x6d) && (p_buf[2] == 0x64))
+	{
+
+		//命令处理
+		switch(*p_cmd)
+		{
+		case CMD_UDP_LINK:
+
+//			if(udp_trans_struct.flg == 0)
+//			{
+//				udp_trans_struct.flg = 1;
+//				udp_trans_struct.cmd = CMD_UDP_LINK;
+//				udp_trans_struct.pcb = pcb;
+//				udp_trans_struct.p = pbuf_alloc(PBUF_RAW,length,PBUF_RAM);
+//				udp_trans_struct.img_width  = *((u16_t *)&p_buf[6]);
+//				udp_trans_struct.img_height = *((u16_t *)&p_buf[8]);
+//				udp_trans_struct.frame_num = 0;
+//
+//			}
+
+//			if(p_udp->flg == 0)
+//			{
+//				p_udp->flg 	= 1;
+//				p_udp->cmd 	= CMD_UDP_LINK;
+//				p_udp->pcb 	= pcb;
+//				p_udp->p 	= pbuf_alloc(PBUF_RAW,length,PBUF_RAM);
+//				p_udp->img_width =  *((u16_t *)&p_buf[6]);
+//				p_udp->img_height = *((u16_t *)&p_buf[8]);
+//				p_udp->frame_num = 0;
+//
+//			}
+
+			udp_sendto(pcb, p_rev, &pcb->remote_ip, pcb->remote_port);
+			break;
+
+		case CMD_PIC_STREAM:
+			xil_printf("CMD_PIC_STREAM \r\n");
+			if(udp_trans_struct.flg == 0) return;
+			udp_trans_struct.cmd = CMD_PIC_STREAM;
+			udp_trans_struct.p->payload = 0x17000000;
+			udp_sendto(udp_trans_struct.pcb, udp_trans_struct.p, &udp_trans_struct.pcb->remote_ip, udp_trans_struct.pcb->remote_port);
+			break;
+
+		case CMD_PIC_CAPTURE:
+
+			xil_printf("CMD_PIC_CAPTURE \r\n");
+			break;
+
+		case CMD_PIC_STOP:
+			xil_printf("CMD_PIC_STOP \r\n");
+			break;
+
+		case CMD_UDP_unLINK:
+
+//			udp_trans_struct.flg = 0;
+//			udp_trans_struct.cmd = CMD_UDP_unLINK;
+//			udp_trans_struct.pcb = 0;
+//			udp_trans_struct.img_width  = 0;
+//			udp_trans_struct.img_height = 0;
+//			udp_trans_struct.frame_num = 0;
+//			pbuf_free(udp_trans_struct.p);
+
+//			p_udp->flg = 0;
+//			p_udp->cmd = CMD_UDP_unLINK;
+//			p_udp->pcb = 0;
+//			p_udp->img_width = 0;
+//			p_udp->img_height = 0;
+//			p_udp->frame_num = 0;
+//			pbuf_free(p_udp->p);
+
+
+
+			break;
+
+		}
+
+
+
+	}
+
+
+
+//	struct pbuf *p;
+//
+//	p = pbuf_alloc(PBUF_RAW,3840,PBUF_RAM);
+//
+//	for(int i=0;i<341;i++)
+//	{
+//		p->payload = (void*)0x17000000 + i*3840;
+//		udp_sendto(pcb, p, &pcb->remote_ip, pcb->remote_port);
+//	}
+//	pbuf_free(p);
+
+
+
+
+}
+
+//void udp_trans( struct udp_pcb *tpcb,struct pbuf *p, const ip_addr_t *addr, u16_t port)
+//{
+//	struct pbuf *p_buf;
+//	p_buf = pbuf_alloc(PBUF_RAW,1024,PBUF_RAM);
+//
+//	xil_printf("p->flags= %x,  p_buf->flags= %x, \r\n",p->flags,p_buf->flags);
+//	xil_printf("p->ref = %x,   p_buf->ref =  %x, \r\n",p->ref,  p_buf->ref);
+//	xil_printf("p->type = %x,  p_buf->type = %x, \r\n",p->type, p_buf->type);
+//
+//	p_buf->payload = (void*)0x17000000;
+////	p_buf->len = 1024;
+////	p_buf->tot_len =1024;
+//	xil_printf("p->len = %d\n\r",p_buf ->len);
+//	xil_printf("p->tot_len = %d\n\r",p_buf->tot_len);
+//	xil_printf("p = %x\n\r",p);
+//	xil_printf("p_buf = %x\n\r",p_buf);
+//	xil_printf("p->payload = %x\n\r",p_buf->payload);
+//
+//	xil_printf("p->flags= %x,  p_buf->flags= %x, \r\n",p->flags,p_buf->flags);
+//	xil_printf("p->ref = %x,   p_buf->ref =  %x, \r\n",p->ref,  p_buf->ref);
+//	xil_printf("p->type = %x,  p_buf->type = %x, \r\n",p->type, p_buf->type);
+//
+//
+//
+//
+//	///udp_sendto(tpcb, p_buf, addr, port);
+//	udp_sendto(tpcb, p_buf, &tpcb->remote_ip, tpcb->remote_port);
+////	xil_printf("p->len = %d\n\r",p ->len);
+//	pbuf_free(p_buf);
+//
+//
+//}
+

@@ -1,0 +1,110 @@
+/*
+ * my_udp.c
+ *
+ *  Created on: 2019年5月8日
+ *      Author: Administrator
+ */
+#include"my_udp.h"
+
+
+void udp_trans(struct udp_pcb *pcb,struct pbuf *p_rev)
+{
+	unsigned char *p_buf;
+	unsigned short *p_cmd;
+
+	p_buf = (unsigned char *)(p_rev->payload);
+	p_cmd = &p_buf[4];
+
+
+	xil_printf("char = %d \r\n", sizeof(char));
+	xil_printf("short = %d \r\n", sizeof(short));
+	xil_printf("int = %d \r\n", sizeof(int));
+	for(int i=0; i<p_rev->len;i++)
+	{
+
+		xil_printf("p_buf[%d] = %x \r\n", i,p_buf[i]);
+	}
+
+	xil_printf("p_cmd = %x %x \r\n", p_cmd[0],p_cmd[1]);
+
+
+	//接收到上位机命令
+	if((p_buf[0] == 0x63) && (p_buf[1] == 0x6d) && (p_buf[2] == 0x64))
+	{
+
+		//命令处理
+		switch(*p_cmd)
+		{
+		case CMD_UDP_LINK:
+			xil_printf("CMD_UDP_LINK \r\n");
+			break;
+
+		case CMD_PIC_STREAM:
+			xil_printf("CMD_PIC_STREAM \r\n");
+			break;
+
+		case CMD_PIC_CAPTURE:
+			xil_printf("CMD_PIC_CAPTURE \r\n");
+			break;
+
+		case CMD_PIC_STOP:
+			xil_printf("CMD_PIC_STOP \r\n");
+			break;
+
+		}
+
+
+
+	}
+
+
+
+//	struct pbuf *p;
+//
+//	p = pbuf_alloc(PBUF_RAW,3840,PBUF_RAM);
+//
+//	for(int i=0;i<341;i++)
+//	{
+//		p->payload = (void*)0x17000000 + i*3840;
+//		udp_sendto(pcb, p, &pcb->remote_ip, pcb->remote_port);
+//	}
+//	pbuf_free(p);
+
+
+
+
+}
+
+//void udp_trans( struct udp_pcb *tpcb,struct pbuf *p, const ip_addr_t *addr, u16_t port)
+//{
+//	struct pbuf *p_buf;
+//	p_buf = pbuf_alloc(PBUF_RAW,1024,PBUF_RAM);
+//
+//	xil_printf("p->flags= %x,  p_buf->flags= %x, \r\n",p->flags,p_buf->flags);
+//	xil_printf("p->ref = %x,   p_buf->ref =  %x, \r\n",p->ref,  p_buf->ref);
+//	xil_printf("p->type = %x,  p_buf->type = %x, \r\n",p->type, p_buf->type);
+//
+//	p_buf->payload = (void*)0x17000000;
+////	p_buf->len = 1024;
+////	p_buf->tot_len =1024;
+//	xil_printf("p->len = %d\n\r",p_buf ->len);
+//	xil_printf("p->tot_len = %d\n\r",p_buf->tot_len);
+//	xil_printf("p = %x\n\r",p);
+//	xil_printf("p_buf = %x\n\r",p_buf);
+//	xil_printf("p->payload = %x\n\r",p_buf->payload);
+//
+//	xil_printf("p->flags= %x,  p_buf->flags= %x, \r\n",p->flags,p_buf->flags);
+//	xil_printf("p->ref = %x,   p_buf->ref =  %x, \r\n",p->ref,  p_buf->ref);
+//	xil_printf("p->type = %x,  p_buf->type = %x, \r\n",p->type, p_buf->type);
+//
+//
+//
+//
+//	///udp_sendto(tpcb, p_buf, addr, port);
+//	udp_sendto(tpcb, p_buf, &tpcb->remote_ip, tpcb->remote_port);
+////	xil_printf("p->len = %d\n\r",p ->len);
+//	pbuf_free(p_buf);
+//
+//
+//}
+
